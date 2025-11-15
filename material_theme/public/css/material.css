@@ -420,7 +420,6 @@
     border-radius: 8px;
     border: 1px solid rgba(60, 96, 144, 0.25);
     box-shadow: 0 8px 18px rgba(15, 23, 42, 0.05);
-    /* padding: 10px 14px; */
     transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
     background-color: #ffffff;
     color: var(--md-sys-color-on-surface);
@@ -438,7 +437,6 @@
     border: 1px solid rgba(60, 96, 144, 0.18);
     border-radius: 8px;
     box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.05);
-    /* padding: 10px 14px; */
     color: rgba(17, 28, 43, 0.7);
   }
 
@@ -720,7 +718,7 @@
   [data-theme=material] .filter-section,
   [data-theme=material] .report-filters,
   [data-theme=material] .filter-box,
-  /* [data-theme=material] .filters-section, */
+  [data-theme=material] .filters-section,
   [data-theme=material] .form-section {
     font-size: 15px !important;
   }
@@ -729,18 +727,17 @@
   [data-theme=material] .filter-section input,
   [data-theme=material] .report-filters input,
   [data-theme=material] .filter-box input,
-  /* [data-theme=material] .filters-section input, */
+  [data-theme=material] .filters-section input,
   [data-theme=material] .form-section input,
   [data-theme=material] .filter-section .form-control,
   [data-theme=material] .report-filters .form-control,
   [data-theme=material] .filter-box .form-control,
-  /* [data-theme=material] .filters-section .form-control, */
+  [data-theme=material] .filters-section .form-control,
   [data-theme=material] .form-section .form-control,
   [data-theme=material] .filter-section select,
   [data-theme=material] .report-filters select,
   [data-theme=material] .filter-box select {
     font-size: 15px !important;
-    /* padding: 10px 14px !important; */
     border-radius: 8px !important;
     border: 1px solid rgba(60, 96, 144, 0.25) !important;
     background-color: #ffffff !important;
@@ -761,7 +758,7 @@
   [data-theme=material] .filter-section label,
   [data-theme=material] .report-filters label,
   [data-theme=material] .filter-label,
-  /* [data-theme=material] .filters-section label, */
+  [data-theme=material] .filters-section label,
   [data-theme=material] .form-section label,
   [data-theme=material] .control-label {
     font-size: 14px !important;
@@ -778,7 +775,6 @@
   [data-theme=material] input.date,
   [data-theme=material] .date-input {
     font-size: 15px !important;
-    /* padding: 10px 14px !important; */
     border-radius: 8px !important;
     border: 1px solid rgba(60, 96, 144, 0.25) !important;
     background-color: #ffffff !important;
@@ -871,7 +867,6 @@
   [data-theme=material] .report-filters select,
   [data-theme=material] select.form-control {
     font-size: 15px !important;
-    /* padding: 10px 14px !important; */
     border-radius: 8px !important;
     border: 1px solid rgba(60, 96, 144, 0.25) !important;
     background-color: #ffffff !important;
