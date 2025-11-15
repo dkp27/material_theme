@@ -360,27 +360,6 @@
     opacity: 1;
     transform: scale(1.05);
   }
-
-  /* Increase sidebar text and icon size for better readability */
-  [data-theme=material] .standard-sidebar-item a {
-    font-size: 16px !important;
-    font-weight: 600 !important;
-    padding: 10px 12px !important;
-  }
-
-  [data-theme=material] .standard-sidebar-item a svg,
-  [data-theme=material] .standard-sidebar-item svg {
-    width: 20px !important;
-    height: 20px !important;
-    vertical-align: middle;
-    margin-right: 8px;
-  }
-
-  /* Slightly larger when selected to give emphasis */
-  [data-theme=material] .standard-sidebar-item.selected a {
-    font-size: 17px !important;
-    font-weight: 700 !important;
-  }
   
   /* Sidebar sub-items (nested menus) */
   [data-theme=material] .standard-sidebar-item .sidebar-item-label {
