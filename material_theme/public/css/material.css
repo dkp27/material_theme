@@ -156,26 +156,200 @@
   
   /* Sidebar Navigation */
   [data-theme=material] .standard-sidebar-item {
-    /* border-radius: 0 24px 24px 0; */
+    border-radius: 0 24px 24px 0;
     margin-right: 8px;
-    transition: background-color 0.2s;
+    margin-bottom: 4px;
+    padding: 10px 16px !important;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
+  
+  [data-theme=material] .standard-sidebar-item a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 0;
+  }
+  
+  /* Sidebar Icons - Different Colors */
+  [data-theme=material] .standard-sidebar-item svg,
+  [data-theme=material] .standard-sidebar-item .icon,
+  [data-theme=material] .standard-sidebar-item i,
+  [data-theme=material] .sidebar-item svg,
+  [data-theme=material] .sidebar-item .icon {
+    width: 20px !important;
+    height: 20px !important;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+    margin-right: 0;
+  }
+  
+  /* Icon colors for different menu items - Default gray */
+  [data-theme=material] .standard-sidebar-item:not(.selected) svg,
+  [data-theme=material] .sidebar-item:not(.selected) svg {
+    fill: #5b6078 !important;
+    stroke: #5b6078 !important;
+    opacity: 0.85;
+  }
+  
+  /* Icon colors based on link href */
+  [data-theme=material] .standard-sidebar-item a[href*="home"] svg,
+  [data-theme=material] .standard-sidebar-item a[href*="Home"] svg {
+    fill: #4361ee !important;
+    stroke: #4361ee !important;
+  }
+  
+  [data-theme=material] .standard-sidebar-item a[href*="accounting"] svg,
+  [data-theme=material] .standard-sidebar-item a[href*="Accounting"] svg {
+    fill: #0fb77a !important;
+    stroke: #0fb77a !important;
+  }
+  
+  [data-theme=material] .standard-sidebar-item a[href*="buying"] svg,
+  [data-theme=material] .standard-sidebar-item a[href*="Buying"] svg {
+    fill: #f7b731 !important;
+    stroke: #f7b731 !important;
+  }
+  
+  [data-theme=material] .standard-sidebar-item a[href*="selling"] svg,
+  [data-theme=material] .standard-sidebar-item a[href*="Selling"] svg {
+    fill: #8b5cf6 !important;
+    stroke: #8b5cf6 !important;
+  }
+  
+  [data-theme=material] .standard-sidebar-item a[href*="stock"] svg,
+  [data-theme=material] .standard-sidebar-item a[href*="Stock"] svg {
+    fill: #2ec5ce !important;
+    stroke: #2ec5ce !important;
+  }
+  
+  [data-theme=material] .standard-sidebar-item a[href*="assets"] svg,
+  [data-theme=material] .standard-sidebar-item a[href*="Assets"] svg {
+    fill: #6366f1 !important;
+    stroke: #6366f1 !important;
+  }
+  
+  [data-theme=material] .standard-sidebar-item a[href*="hr"] svg,
+  [data-theme=material] .standard-sidebar-item a[href*="HR"] svg {
+    fill: #ec4899 !important;
+    stroke: #ec4899 !important;
+  }
+  
+  [data-theme=material] .standard-sidebar-item a[href*="manufacturing"] svg,
+  [data-theme=material] .standard-sidebar-item a[href*="Manufacturing"] svg {
+    fill: #f56b6b !important;
+    stroke: #f56b6b !important;
+  }
+  
+  [data-theme=material] .standard-sidebar-item a[href*="quality"] svg,
+  [data-theme=material] .standard-sidebar-item a[href*="Quality"] svg {
+    fill: #06b6d4 !important;
+    stroke: #06b6d4 !important;
+  }
+  
+  [data-theme=material] .standard-sidebar-item a[href*="projects"] svg,
+  [data-theme=material] .standard-sidebar-item a[href*="Projects"] svg {
+    fill: #3b82f6 !important;
+    stroke: #3b82f6 !important;
+  }
+  
+  [data-theme=material] .standard-sidebar-item a[href*="support"] svg,
+  [data-theme=material] .standard-sidebar-item a[href*="Support"] svg {
+    fill: #10b981 !important;
+    stroke: #10b981 !important;
+  }
+  
+  [data-theme=material] .standard-sidebar-item a[href*="users"] svg,
+  [data-theme=material] .standard-sidebar-item a[href*="Users"] svg {
+    fill: #a855f7 !important;
+    stroke: #a855f7 !important;
+  }
+  
+  [data-theme=material] .standard-sidebar-item a[href*="website"] svg,
+  [data-theme=material] .standard-sidebar-item a[href*="Website"] svg {
+    fill: #f97316 !important;
+    stroke: #f97316 !important;
+  }
+  
+  [data-theme=material] .standard-sidebar-item a[href*="payroll"] svg,
+  [data-theme=material] .standard-sidebar-item a[href*="Payroll"] svg {
+    fill: #eab308 !important;
+    stroke: #eab308 !important;
+  }
+  
+  [data-theme=material] .standard-sidebar-item a[href*="crm"] svg,
+  [data-theme=material] .standard-sidebar-item a[href*="CRM"] svg {
+    fill: #f43f5e !important;
+    stroke: #f43f5e !important;
+  }
+  
+  [data-theme=material] .standard-sidebar-item a[href*="tools"] svg,
+  [data-theme=material] .standard-sidebar-item a[href*="Tools"] svg {
+    fill: #64748b !important;
+    stroke: #64748b !important;
+  }
+  
+  [data-theme=material] .standard-sidebar-item a[href*="settings"] svg,
+  [data-theme=material] .standard-sidebar-item a[href*="Settings"] svg {
+    fill: #475569 !important;
+    stroke: #475569 !important;
+  }
+  
+  [data-theme=material] .standard-sidebar-item a[href*="integration"] svg,
+  [data-theme=material] .standard-sidebar-item a[href*="Integration"] svg {
+    fill: #6366f1 !important;
+    stroke: #6366f1 !important;
+  }
+  
+  [data-theme=material] .standard-sidebar-item a[href*="build"] svg,
+  [data-theme=material] .standard-sidebar-item a[href*="Build"] svg {
+    fill: #f59e0b !important;
+    stroke: #f59e0b !important;
+  }
+  
+  /* Alternative: Color icons by nth-child for variety */
+  [data-theme=material] .standard-sidebar-item:nth-child(1) svg { fill: #4361ee !important; stroke: #4361ee !important; }
+  [data-theme=material] .standard-sidebar-item:nth-child(2) svg { fill: #0fb77a !important; stroke: #0fb77a !important; }
+  [data-theme=material] .standard-sidebar-item:nth-child(3) svg { fill: #f7b731 !important; stroke: #f7b731 !important; }
+  [data-theme=material] .standard-sidebar-item:nth-child(4) svg { fill: #8b5cf6 !important; stroke: #8b5cf6 !important; }
+  [data-theme=material] .standard-sidebar-item:nth-child(5) svg { fill: #2ec5ce !important; stroke: #2ec5ce !important; }
+  [data-theme=material] .standard-sidebar-item:nth-child(6) svg { fill: #6366f1 !important; stroke: #6366f1 !important; }
+  [data-theme=material] .standard-sidebar-item:nth-child(7) svg { fill: #ec4899 !important; stroke: #ec4899 !important; }
+  [data-theme=material] .standard-sidebar-item:nth-child(8) svg { fill: #f56b6b !important; stroke: #f56b6b !important; }
+  [data-theme=material] .standard-sidebar-item:nth-child(9) svg { fill: #06b6d4 !important; stroke: #06b6d4 !important; }
+  [data-theme=material] .standard-sidebar-item:nth-child(10) svg { fill: #3b82f6 !important; stroke: #3b82f6 !important; }
+  [data-theme=material] .standard-sidebar-item:nth-child(11) svg { fill: #10b981 !important; stroke: #10b981 !important; }
+  [data-theme=material] .standard-sidebar-item:nth-child(12) svg { fill: #a855f7 !important; stroke: #a855f7 !important; }
+  [data-theme=material] .standard-sidebar-item:nth-child(13) svg { fill: #f97316 !important; stroke: #f97316 !important; }
+  [data-theme=material] .standard-sidebar-item:nth-child(14) svg { fill: #eab308 !important; stroke: #eab308 !important; }
+  [data-theme=material] .standard-sidebar-item:nth-child(15) svg { fill: #f43f5e !important; stroke: #f43f5e !important; }
+  [data-theme=material] .standard-sidebar-item:nth-child(16) svg { fill: #64748b !important; stroke: #64748b !important; }
+  [data-theme=material] .standard-sidebar-item:nth-child(17) svg { fill: #475569 !important; stroke: #475569 !important; }
+  [data-theme=material] .standard-sidebar-item:nth-child(18) svg { fill: #6366f1 !important; stroke: #6366f1 !important; }
+  [data-theme=material] .standard-sidebar-item:nth-child(19) svg { fill: #f59e0b !important; stroke: #f59e0b !important; }
   
   [data-theme=material] .standard-sidebar-item.selected {
     background-color: var(--md-sys-color-primary);
     box-shadow: var(--md-shadow-2);
+    padding: 10px 16px !important;
   }
   
   [data-theme=material] .standard-sidebar-item.selected a {
     color: var(--md-sys-color-on-primary);
   }
   
-  [data-theme=material] .standard-sidebar-item.selected a svg {
-    fill: var(--md-sys-color-on-primary);
+  [data-theme=material] .standard-sidebar-item.selected svg {
+    fill: var(--md-sys-color-on-primary) !important;
+    stroke: var(--md-sys-color-on-primary) !important;
+    opacity: 1;
   }
   
   [data-theme=material] .standard-sidebar-item:hover {
     background-color: var(--md-sys-color-primary-container);
+    padding: 10px 16px !important;
   }
   
   [data-theme=material] .standard-sidebar-item:hover a {
@@ -183,7 +357,26 @@
   }
   
   [data-theme=material] .standard-sidebar-item:hover svg {
-    fill: var(--md-sys-color-primary);
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  
+  /* Sidebar sub-items (nested menus) */
+  [data-theme=material] .standard-sidebar-item .sidebar-item-label {
+    flex: 1;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  /* Sidebar category headers */
+  [data-theme=material] .sidebar-category-header {
+    padding: 12px 16px 8px 16px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--md-sys-color-on-surface-variant);
+    opacity: 0.7;
   }
   
   /* Cards/Widgets */
