@@ -180,8 +180,8 @@
   [data-theme=material] .standard-sidebar-item i,
   [data-theme=material] .sidebar-item svg,
   [data-theme=material] .sidebar-item .icon {
-    width: 20px !important;
-    height: 20px !important;
+    width: 25px !important;
+    height: 25px !important;
     flex-shrink: 0;
     transition: all 0.2s ease;
     margin-right: 0;
