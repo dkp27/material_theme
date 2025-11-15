@@ -745,7 +745,7 @@
     border: 1px solid rgba(60, 96, 144, 0.25) !important;
     background-color: #ffffff !important;
     color: var(--md-sys-color-on-surface) !important;
-    min-height: 42px !important;
+    /* min-height: 42px !important; */
   }
 
   [data-theme=material] .filter-section input:focus,
@@ -783,7 +783,7 @@
     border: 1px solid rgba(60, 96, 144, 0.25) !important;
     background-color: #ffffff !important;
     color: var(--md-sys-color-on-surface) !important;
-    min-height: 42px !important;
+    /* min-height: 42px !important; */
   }
 
   [data-theme=material] input[type="date"]:focus,
@@ -876,5 +876,5 @@
     border: 1px solid rgba(60, 96, 144, 0.25) !important;
     background-color: #ffffff !important;
     color: var(--md-sys-color-on-surface) !important;
-    min-height: 42px !important;
+    /* min-height: 42px !important; */
   }
