@@ -637,3 +637,181 @@
     stroke: var(--md-sys-color-on-primary);
     fill: var(--md-sys-color-on-primary);
   }
+
+  /* Report Tables and Data Display */
+  [data-theme=material] .report-wrapper,
+  [data-theme=material] .report-container,
+  [data-theme=material] .report-table-container {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  [data-theme=material] table.report-table,
+  [data-theme=material] .report-table table,
+  [data-theme=material] .frappe-list table,
+  [data-theme=material] .list-container table {
+    font-size: 15px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  [data-theme=material] table.report-table th,
+  [data-theme=material] .report-table table th,
+  [data-theme=material] .frappe-list table th,
+  [data-theme=material] .list-container table th,
+  [data-theme=material] .list-row-head th,
+  [data-theme=material] .list-row-head td {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--md-sys-color-on-surface);
+    padding: 12px 14px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: ellipsis;
+    background-color: var(--md-sys-color-surface-container-low);
+    border-bottom: 2px solid var(--md-sys-color-primary);
+  }
+
+  [data-theme=material] table.report-table td,
+  [data-theme=material] .report-table table td,
+  [data-theme=material] .frappe-list table td,
+  [data-theme=material] .list-container table td,
+  [data-theme=material] .list-row td,
+  [data-theme=material] .list-row-cell {
+    font-size: 15px;
+    color: var(--md-sys-color-on-surface);
+    padding: 12px 14px;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.6;
+    vertical-align: top;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  [data-theme=material] table.report-table tr:hover td,
+  [data-theme=material] .report-table table tr:hover td,
+  [data-theme=material] .list-row:hover td {
+    background-color: rgba(60, 96, 144, 0.04);
+  }
+
+  [data-theme=material] .list-row.selected td {
+    background-color: var(--md-sys-color-primary-container);
+  }
+
+  /* Report Filters and Controls */
+  [data-theme=material] .filter-section,
+  [data-theme=material] .report-filters,
+  [data-theme=material] .filter-box {
+    font-size: 15px;
+  }
+
+  [data-theme=material] .filter-section .form-control,
+  [data-theme=material] .report-filters .form-control,
+  [data-theme=material] .filter-box .form-control,
+  [data-theme=material] .filter-section input[type="text"],
+  [data-theme=material] .filter-section input[type="date"],
+  [data-theme=material] .report-filters input[type="text"],
+  [data-theme=material] .report-filters input[type="date"] {
+    font-size: 15px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(60, 96, 144, 0.25);
+    background-color: #ffffff;
+    color: var(--md-sys-color-on-surface);
+    min-height: 42px;
+  }
+
+  [data-theme=material] .filter-section .form-control:focus,
+  [data-theme=material] .report-filters .form-control:focus {
+    border-color: var(--md-sys-color-primary);
+    box-shadow: 0 0 0 4px rgba(60, 96, 144, 0.18);
+  }
+
+  [data-theme=material] .filter-section label,
+  [data-theme=material] .report-filters label,
+  [data-theme=material] .filter-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--md-sys-color-on-surface);
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  /* Date Inputs in Reports */
+  [data-theme=material] input[type="date"],
+  [data-theme=material] .date-picker,
+  [data-theme=material] .datepicker {
+    font-size: 15px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(60, 96, 144, 0.25);
+    background-color: #ffffff;
+    color: var(--md-sys-color-on-surface);
+    min-height: 42px;
+  }
+
+  [data-theme=material] input[type="date"]:focus,
+  [data-theme=material] .date-picker:focus {
+    border-color: var(--md-sys-color-primary);
+    box-shadow: 0 0 0 4px rgba(60, 96, 144, 0.18);
+  }
+
+  /* Text in Report Cells - Ensure Visibility */
+  [data-theme=material] .report-table td a,
+  [data-theme=material] .list-row-cell a {
+    color: var(--md-sys-color-primary);
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  [data-theme=material] .report-table td a:hover {
+    text-decoration: underline;
+  }
+
+  /* Numeric Values in Reports */
+  [data-theme=material] .report-table td.numeric,
+  [data-theme=material] .list-row-cell.numeric {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    font-weight: 500;
+  }
+
+  /* Report Actions and Buttons */
+  [data-theme=material] .report-actions,
+  [data-theme=material] .page-actions {
+    font-size: 15px;
+  }
+
+  /* Checkbox in Reports */
+  [data-theme=material] .report-table input[type="checkbox"],
+  [data-theme=material] .list-row input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  /* Ensure text is not cut off */
+  [data-theme=material] .report-table,
+  [data-theme=material] .frappe-list,
+  [data-theme=material] .list-container {
+    overflow-x: auto;
+    overflow-y: visible;
+  }
+
+  [data-theme=material] .report-table td,
+  [data-theme=material] .list-row td {
+    min-width: 80px;
+    max-width: none;
+  }
+
+  /* Report Footer Text */
+  [data-theme=material] .report-footer,
+  [data-theme=material] .execution-time {
+    font-size: 13px;
+    color: var(--md-sys-color-on-surface-variant);
+    padding: 12px 0;
+  }
