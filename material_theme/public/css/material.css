@@ -720,7 +720,7 @@
   [data-theme=material] .filter-section,
   [data-theme=material] .report-filters,
   [data-theme=material] .filter-box,
-  [data-theme=material] .filters-section,
+  /* [data-theme=material] .filters-section, */
   [data-theme=material] .form-section {
     font-size: 15px !important;
   }
@@ -729,12 +729,12 @@
   [data-theme=material] .filter-section input,
   [data-theme=material] .report-filters input,
   [data-theme=material] .filter-box input,
-  [data-theme=material] .filters-section input,
+  /* [data-theme=material] .filters-section input, */
   [data-theme=material] .form-section input,
   [data-theme=material] .filter-section .form-control,
   [data-theme=material] .report-filters .form-control,
   [data-theme=material] .filter-box .form-control,
-  [data-theme=material] .filters-section .form-control,
+  /* [data-theme=material] .filters-section .form-control, */
   [data-theme=material] .form-section .form-control,
   [data-theme=material] .filter-section select,
   [data-theme=material] .report-filters select,
@@ -761,7 +761,7 @@
   [data-theme=material] .filter-section label,
   [data-theme=material] .report-filters label,
   [data-theme=material] .filter-label,
-  [data-theme=material] .filters-section label,
+  /* [data-theme=material] .filters-section label, */
   [data-theme=material] .form-section label,
   [data-theme=material] .control-label {
     font-size: 14px !important;
