@@ -638,140 +638,178 @@
     fill: var(--md-sys-color-on-primary);
   }
 
-  /* Report Tables and Data Display */
+  /* Report Tables and Data Display - More Specific Selectors */
   [data-theme=material] .report-wrapper,
   [data-theme=material] .report-container,
-  [data-theme=material] .report-table-container {
-    font-size: 15px;
-    line-height: 1.6;
+  [data-theme=material] .report-table-container,
+  [data-theme=material] .result-wrapper,
+  [data-theme=material] .report-content {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
   }
 
-  [data-theme=material] table.report-table,
-  [data-theme=material] .report-table table,
+  /* All tables in reports */
+  [data-theme=material] table,
+  [data-theme=material] .report-table,
   [data-theme=material] .frappe-list table,
-  [data-theme=material] .list-container table {
-    font-size: 15px;
+  [data-theme=material] .list-container table,
+  [data-theme=material] .result-table,
+  [data-theme=material] .report-wrapper table {
+    font-size: 15px !important;
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
   }
 
-  [data-theme=material] table.report-table th,
-  [data-theme=material] .report-table table th,
+  /* Table headers - all variations */
+  [data-theme=material] table th,
+  [data-theme=material] .report-table th,
   [data-theme=material] .frappe-list table th,
   [data-theme=material] .list-container table th,
   [data-theme=material] .list-row-head th,
-  [data-theme=material] .list-row-head td {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--md-sys-color-on-surface);
-    padding: 12px 14px;
+  [data-theme=material] .list-row-head td,
+  [data-theme=material] .result-table th,
+  [data-theme=material] thead th,
+  [data-theme=material] thead td {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: var(--md-sys-color-on-surface) !important;
+    padding: 12px 14px !important;
     text-align: left;
     white-space: nowrap;
-    overflow: visible;
+    overflow: visible !important;
     text-overflow: ellipsis;
-    background-color: var(--md-sys-color-surface-container-low);
-    border-bottom: 2px solid var(--md-sys-color-primary);
+    background-color: var(--md-sys-color-surface-container-low) !important;
+    border-bottom: 2px solid var(--md-sys-color-primary) !important;
   }
 
-  [data-theme=material] table.report-table td,
-  [data-theme=material] .report-table table td,
+  /* Table cells - all variations */
+  [data-theme=material] table td,
+  [data-theme=material] .report-table td,
   [data-theme=material] .frappe-list table td,
   [data-theme=material] .list-container table td,
   [data-theme=material] .list-row td,
-  [data-theme=material] .list-row-cell {
-    font-size: 15px;
-    color: var(--md-sys-color-on-surface);
-    padding: 12px 14px;
-    white-space: normal;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.6;
+  [data-theme=material] .list-row-cell,
+  [data-theme=material] .result-table td,
+  [data-theme=material] tbody td,
+  [data-theme=material] .cell {
+    font-size: 15px !important;
+    color: var(--md-sys-color-on-surface) !important;
+    padding: 12px 14px !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    line-height: 1.6 !important;
     vertical-align: top;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
   }
 
-  [data-theme=material] table.report-table tr:hover td,
-  [data-theme=material] .report-table table tr:hover td,
-  [data-theme=material] .list-row:hover td {
-    background-color: rgba(60, 96, 144, 0.04);
+  /* Table row hover */
+  [data-theme=material] table tr:hover td,
+  [data-theme=material] .report-table tr:hover td,
+  [data-theme=material] .list-row:hover td,
+  [data-theme=material] tbody tr:hover td {
+    background-color: rgba(60, 96, 144, 0.04) !important;
   }
 
   [data-theme=material] .list-row.selected td {
-    background-color: var(--md-sys-color-primary-container);
+    background-color: var(--md-sys-color-primary-container) !important;
   }
 
-  /* Report Filters and Controls */
+  /* Report Filters and Controls - More Specific */
   [data-theme=material] .filter-section,
   [data-theme=material] .report-filters,
-  [data-theme=material] .filter-box {
-    font-size: 15px;
+  [data-theme=material] .filter-box,
+  [data-theme=material] .filters-section,
+  [data-theme=material] .form-section {
+    font-size: 15px !important;
   }
 
+  /* All input fields in reports and filters */
+  [data-theme=material] .filter-section input,
+  [data-theme=material] .report-filters input,
+  [data-theme=material] .filter-box input,
+  [data-theme=material] .filters-section input,
+  [data-theme=material] .form-section input,
   [data-theme=material] .filter-section .form-control,
   [data-theme=material] .report-filters .form-control,
   [data-theme=material] .filter-box .form-control,
-  [data-theme=material] .filter-section input[type="text"],
-  [data-theme=material] .filter-section input[type="date"],
-  [data-theme=material] .report-filters input[type="text"],
-  [data-theme=material] .report-filters input[type="date"] {
-    font-size: 15px;
-    padding: 10px 14px;
-    border-radius: 8px;
-    border: 1px solid rgba(60, 96, 144, 0.25);
-    background-color: #ffffff;
-    color: var(--md-sys-color-on-surface);
-    min-height: 42px;
+  [data-theme=material] .filters-section .form-control,
+  [data-theme=material] .form-section .form-control,
+  [data-theme=material] .filter-section select,
+  [data-theme=material] .report-filters select,
+  [data-theme=material] .filter-box select {
+    font-size: 15px !important;
+    padding: 10px 14px !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(60, 96, 144, 0.25) !important;
+    background-color: #ffffff !important;
+    color: var(--md-sys-color-on-surface) !important;
+    min-height: 42px !important;
   }
 
+  [data-theme=material] .filter-section input:focus,
+  [data-theme=material] .report-filters input:focus,
+  [data-theme=material] .filter-box input:focus,
   [data-theme=material] .filter-section .form-control:focus,
   [data-theme=material] .report-filters .form-control:focus {
-    border-color: var(--md-sys-color-primary);
-    box-shadow: 0 0 0 4px rgba(60, 96, 144, 0.18);
+    border-color: var(--md-sys-color-primary) !important;
+    box-shadow: 0 0 0 4px rgba(60, 96, 144, 0.18) !important;
   }
 
+  /* Labels in filters */
   [data-theme=material] .filter-section label,
   [data-theme=material] .report-filters label,
-  [data-theme=material] .filter-label {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--md-sys-color-on-surface);
+  [data-theme=material] .filter-label,
+  [data-theme=material] .filters-section label,
+  [data-theme=material] .form-section label,
+  [data-theme=material] .control-label {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: var(--md-sys-color-on-surface) !important;
     margin-bottom: 6px;
     display: block;
   }
 
-  /* Date Inputs in Reports */
+  /* Date Inputs - All variations */
   [data-theme=material] input[type="date"],
   [data-theme=material] .date-picker,
-  [data-theme=material] .datepicker {
-    font-size: 15px;
-    padding: 10px 14px;
-    border-radius: 8px;
-    border: 1px solid rgba(60, 96, 144, 0.25);
-    background-color: #ffffff;
-    color: var(--md-sys-color-on-surface);
-    min-height: 42px;
+  [data-theme=material] .datepicker,
+  [data-theme=material] input.date,
+  [data-theme=material] .date-input {
+    font-size: 15px !important;
+    padding: 10px 14px !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(60, 96, 144, 0.25) !important;
+    background-color: #ffffff !important;
+    color: var(--md-sys-color-on-surface) !important;
+    min-height: 42px !important;
   }
 
   [data-theme=material] input[type="date"]:focus,
-  [data-theme=material] .date-picker:focus {
-    border-color: var(--md-sys-color-primary);
-    box-shadow: 0 0 0 4px rgba(60, 96, 144, 0.18);
+  [data-theme=material] .date-picker:focus,
+  [data-theme=material] input.date:focus {
+    border-color: var(--md-sys-color-primary) !important;
+    box-shadow: 0 0 0 4px rgba(60, 96, 144, 0.18) !important;
   }
 
   /* Text in Report Cells - Ensure Visibility */
+  [data-theme=material] table td a,
   [data-theme=material] .report-table td a,
-  [data-theme=material] .list-row-cell a {
-    color: var(--md-sys-color-primary);
+  [data-theme=material] .list-row-cell a,
+  [data-theme=material] .cell a {
+    color: var(--md-sys-color-primary) !important;
     font-weight: 500;
     text-decoration: none;
   }
 
+  [data-theme=material] table td a:hover,
   [data-theme=material] .report-table td a:hover {
     text-decoration: underline;
   }
 
   /* Numeric Values in Reports */
+  [data-theme=material] table td.numeric,
   [data-theme=material] .report-table td.numeric,
   [data-theme=material] .list-row-cell.numeric {
     text-align: right;
@@ -782,14 +820,15 @@
   /* Report Actions and Buttons */
   [data-theme=material] .report-actions,
   [data-theme=material] .page-actions {
-    font-size: 15px;
+    font-size: 15px !important;
   }
 
   /* Checkbox in Reports */
+  [data-theme=material] table input[type="checkbox"],
   [data-theme=material] .report-table input[type="checkbox"],
   [data-theme=material] .list-row input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
+    width: 18px !important;
+    height: 18px !important;
     margin: 0;
     cursor: pointer;
   }
@@ -797,11 +836,14 @@
   /* Ensure text is not cut off */
   [data-theme=material] .report-table,
   [data-theme=material] .frappe-list,
-  [data-theme=material] .list-container {
+  [data-theme=material] .list-container,
+  [data-theme=material] .result-wrapper,
+  [data-theme=material] table {
     overflow-x: auto;
     overflow-y: visible;
   }
 
+  [data-theme=material] table td,
   [data-theme=material] .report-table td,
   [data-theme=material] .list-row td {
     min-width: 80px;
@@ -810,8 +852,29 @@
 
   /* Report Footer Text */
   [data-theme=material] .report-footer,
-  [data-theme=material] .execution-time {
-    font-size: 13px;
-    color: var(--md-sys-color-on-surface-variant);
+  [data-theme=material] .execution-time,
+  [data-theme=material] .result-footer {
+    font-size: 13px !important;
+    color: var(--md-sys-color-on-surface-variant) !important;
     padding: 12px 0;
+  }
+
+  /* All text in report area */
+  [data-theme=material] .report-wrapper *,
+  [data-theme=material] .result-wrapper *,
+  [data-theme=material] .report-content * {
+    font-size: inherit;
+  }
+
+  /* Ensure select dropdowns are styled */
+  [data-theme=material] .filter-section select,
+  [data-theme=material] .report-filters select,
+  [data-theme=material] select.form-control {
+    font-size: 15px !important;
+    padding: 10px 14px !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(60, 96, 144, 0.25) !important;
+    background-color: #ffffff !important;
+    color: var(--md-sys-color-on-surface) !important;
+    min-height: 42px !important;
   }
