@@ -885,3 +885,16 @@
     padding: 0 14px !important;
     line-height: 1.2 !important;
   }
+
+  /* Stronger specificity to override compiled bundle rules (desk.bundle.css)
+     that may be applied at runtime. Targets the common Frappe select markup. */
+  [data-theme=material] .frappe-control[data-fieldtype=Select] select.input-with-feedback.form-control,
+  [data-theme=material] .frappe-control[data-fieldtype=Select] select.input-with-feedback.form-control.input-xs,
+  [data-theme=material] select.input-with-feedback.form-control.input-xs,
+  [data-theme=material] select.input-with-feedback.form-control {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    line-height: 1.2 !important;
+  }
