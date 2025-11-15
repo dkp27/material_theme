@@ -873,3 +873,15 @@
     color: var(--md-sys-color-on-surface) !important;
     min-height: 42px !important;
   }
+
+  /* Override: remove unwanted vertical padding applied to select elements
+     (some builds inject `padding: 10px 14px`). Use a targeted rule to
+     remove that vertical padding while keeping horizontal spacing. */
+  [data-theme=material] select.form-control,
+  [data-theme=material] .filter-section select,
+  [data-theme=material] .report-filters select,
+  [data-theme=material] .filter-box select,
+  [data-theme=material] select.input-with-feedback.form-control {
+    padding: 0 14px !important;
+    line-height: 1.2 !important;
+  }
